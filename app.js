@@ -5,7 +5,7 @@ const amigos = [];
             const nombre = document.getElementById('amigo').value.trim();
             if (nombre) {
                 amigos.push(nombre);
-                document.getElementById('amigo').value = ''; // Limpiar el campo de entrada
+                document.getElementById('amigo').value = ''; 
                 actualizarListaAmigos();
             } else {
                 alert("Por favor, ingresa un nombre válido.");
@@ -14,7 +14,7 @@ const amigos = [];
 
         function actualizarListaAmigos() {
             const listaAmigos = document.getElementById('listaAmigos');
-            listaAmigos.innerHTML = ''; // Limpiar la lista antes de actualizar
+            listaAmigos.innerHTML = ''; 
             amigos.forEach(amigo => {
                 const li = document.createElement('li');
                 li.textContent = amigo;
